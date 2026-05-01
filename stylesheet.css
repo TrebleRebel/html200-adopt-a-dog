@@ -5,6 +5,8 @@
 
 header {
     background-image: url(images/header-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     background-color: rgb(12, 62, 109);
     padding-top: 3rem;
     padding-bottom: 10rem;
@@ -66,4 +68,43 @@ nav {
 
 .nav_text {
     color: rgb(24, 24, 124) !important;
+}
+
+footer {
+    background-color: rgb(12, 62, 109);
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    padding: 3em;
+}
+
+.box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 50rem;
+    padding-right: 50rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.footertext {
+    color: white;
+    font-weight: lighter;
+    text-align: center;
+}
+
+.footer_link {
+    color: white;
+}
+
+.footerimg {
+    display: grid;
+    margin: auto;
+    width: 50%;
 }
