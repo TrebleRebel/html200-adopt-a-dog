@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-image: url(images/header-image.jpg);
+    background-color: rgb(12, 62, 109);
+    padding-top: 3rem;
+    padding-bottom: 10rem;
+    padding-left: 4rem;
+}
+
+nav {
+    background: rgb(240, 240, 240);
+}
+
+.header_container {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.checkout {
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin-left: auto; 
+    margin-right: 4rem;
+}
+
+.checkout_button {
+    background-color: rgb(119, 184, 22);
+    padding: 0.1rem 4rem;
+    text-align: center;
+    border: none;
+    color: white;
+    font-weight: bold;
+}
+
+.total {
+
+}
+
+.tagline {
+    color: rgb(101, 160, 14);
+}
+
+a {
+    text-decoration:none;
+}
+
+a:visited {
+    color: white;
+}

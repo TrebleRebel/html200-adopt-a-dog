@@ -3,13 +3,27 @@
         <head>
             <meta charset="utf-8">
             <title>AdoptaDog - Home</title>
+            <link rel="stylesheet" type="text/css" href="stylesheet.css">
+            <link href='https://fonts.googleapis.com/css?family=ABeeZee' rel='stylesheet'>
+
+            <style>
+                .tagline {
+                font-family: 'ABeeZee';
+            }
+            </style>
         </head>
 
         <header>
-            <img src="images/adoptadog-logo.svg" width="30%" height="30%">
-            <p>Seattle’s premiere dog adoption agency</p>
-            <img src="images/cart-icon.svg" width="2%" height="2%">
-            <button type="button"><a href="checkout.html">Checkout</a></button>
+            <div class="header_container">
+                <div>
+                    <img src="images/adoptadog-logo.svg" width="80%" height="80%">
+                    <h3 class="tagline">Seattle’s premiere dog adoption agency</h3>
+                </div>
+                <div class="checkout">
+                    <img src="images/cart-icon.svg" width="25%" height="25%" class="cart"><p class="total">$1234.56</p>
+                    <button type="button" class="checkout_button"><a href="checkout.html">Checkout</a></button>
+                </div>
+            </div>
         </header>
 
         <nav>
