@@ -78,6 +78,10 @@ h1 {
     color: rgb(24, 24, 124);
 }
 
+h2 {
+    color: rgb(24, 24, 124);
+}
+
 h3 {
     color: rgb(24, 24, 124);
 }
@@ -97,6 +101,14 @@ p {
     padding-right: 7rem;
     margin-top: 2rem;
     margin-bottom: 4rem;
+}
+
+.blog-container {
+    display: flex;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+    gap: 1rem;
+    place-items: center;
 }
 
 .dog-container {
