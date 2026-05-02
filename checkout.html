@@ -22,6 +22,10 @@
                     font-family: 'Abyssinica SIL';
                 }
 
+                label {
+                    font-family: 'Abyssinica SIL';
+                }
+
                 footer {
                     font-family: 'ABeeZee';
                 }
@@ -43,7 +47,7 @@
                     <h3 class="tagline">Seattle’s premiere dog adoption agency</h3>
                 </div>
                 <div class="checkout">
-                    <img src="images/cart-icon.svg" width="25%" height="25%" class="cart"><p>$1234.56</p>
+                    <img src="images/cart-icon.svg" width="25%" height="25%" class="cart"><p class="total">$1234.56</p>
                     <button type="button" class="checkout_button"><a href="checkout.html">Checkout</a></button>
                 </div>
             </div>
@@ -54,41 +58,53 @@
         </nav>
 
         <body>
-            <h1>Checkout</h1>
-                <form>
-                    <label for="name">Name:</label><br>
-                    <input type="text" id="name" name="name"><br>
-                    <label for="email">Email Address:</label><br>
-                    <input type="text" id="email" name="email"><br>
-                    <label for="street">Street Address:</label><br>
-                    <input type="text" id="street" name="street"><br>
-                    <label for="city">City:</label><br>
-                    <input type="text" id="city" name="city"><br>
-                    <label for="state">State:</label><br>
-                    <select name="state" id="state"><br>
-                        <option value="WA">WA</option>
-                        <option value="ID">ID</option>
-                        <option value="OR">OR</option>
-                    </select><br>
-                    <label for="zip">Zip Code:</label><br>
-                    <input type="text" id="zip" name="zip"><br>
-                    <label for="first-time">First Time Adopter?</label><br>
-                    <input type="radio" id="yes" name="first-time" value="yes">
-                    <label for="age1">Yes</label><br>
-                    <input type="radio" id="no" name="first-time" value="no">
-                    <label for="age2">No</label><br> 
-                    <label for="state">Pickup Location:</label><br>
-                    <select name="pickup" id="pickup"><br>
-                        <option value="Seattle">Seattle</option>
-                        <option value="Tacoma">Tacoma</option>
-                        <option value="Everett">Everett</option>
-                        <option value="Olympia">Olympia</option>
-                    </select><br>
-                    <label for="name">Dogs Adopted</label><br>
-                    <label for="name">Total Adoption Cost</label><br>
+            <div class="form-container">
+                <h1>Checkout</h1>
+                    <form>
+                        <label for="name">Name:</label><br>
+                        <input type="text" id="name" name="name"><br>
+                        <label for="email">Email Address:</label><br>
+                        <input type="text" id="email" name="email"><br>
+                        <label for="street">Street Address:</label><br>
+                        <input type="text" id="street" name="street"><br>
+                        <div class="location">
+                            <div>
+                                <label for="city">City:</label><br>
+                                <input type="text" id="city" name="city"><br>
+                            </div>
+                            <div>
+                                <label for="state">State:</label><br>
+                                <select name="state" id="state"><br>
+                                    <option value="WA">WA</option>
+                                    <option value="ID">ID</option>
+                                    <option value="OR">OR</option>
+                                </select><br>
+                            </div>
+                            <div>
+                                <label for="zip">Zip Code:</label><br>
+                                <input type="text" id="zip" name="zip"><br>
+                            </div>
+                        </div>
+                        <label for="first-time">First Time Adopter?</label><br>
+                        <div class="first-time">
+                            <input type="radio" id="yes" name="first-time" value="yes">
+                            <label for="yes">Yes</label>
+                            <input type="radio" id="no" name="first-time" value="no">
+                            <label for="no">No</label>
+                        </div><br><br>
+                        <label for="state">Pickup Location:</label><br>
+                        <select name="pickup" id="pickup"><br>
+                            <option value="Seattle">Seattle</option>
+                            <option value="Tacoma">Tacoma</option>
+                            <option value="Everett">Everett</option>
+                            <option value="Olympia">Olympia</option>
+                        </select><br>
+                        <label for="name">Dogs Adopted</label><br>
+                        <label for="name">Total Adoption Cost</label><br>
 
-                    <input type="submit" value="Submit">
-                </form>
+                        <input type="submit" value="Submit" class="submit-button">
+                    </form>
+            </div>
         </body>
 
         <footer class="footer_container">
