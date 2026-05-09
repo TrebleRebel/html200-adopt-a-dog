@@ -58,7 +58,39 @@
         </nav>
 
         <body>
+            <div class="form-container">
+                <h1>Contact Us</h1>
+                    <form>
+                        <label for="name">First Name:</label><br>
+                        <input type="text" id="name" name="fname"><br>
+                        <label for="name">Last Name:</label><br>
+                        <input type="text" id="name" name="lname"><br>
+                        <label for="email">Email Address:</label><br>
+                        <input type="email" id="email" name="email"><br>
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                        <label for="check">What Age Group(s) of Dogs Are You Interested In?</label><br>
+                        <div class="first-time">
+                        <input type="checkbox" id="dog1" name="dog1" value="puppies">
+                        <label for="vehicle1"> Puppies</label><br>
+                        <input type="checkbox" id="dog2" name="dog2" value="adults">
+                        <label for="vehicle2"> Adults</label><br>
+                        <input type="checkbox" id="dog3" name="dog3" value="elders">
+                        <label for="vehicle3"> Elders</label><br>
+                        </div><br><br>
+                        <label for="first-time">Have You Adopted With Us Before?</label><br>
+                        <div class="first-time">
+                            <input type="radio" id="yes" name="first-time" value="yes">
+                            <label for="yes">Yes</label>
+                            <input type="radio" id="no" name="first-time" value="no">
+                            <label for="no">No</label>
+                        </div><br><br>
+                        <label for="state">Comment or Message:</label><br>
+                        <textarea name="message" rows="10" cols="30"></textarea><br>
 
+                        <input type="submit" value="Submit" class="submit-button">
+                    </form>
+            </div>
         </body>
 
         <footer class="footer_container">
