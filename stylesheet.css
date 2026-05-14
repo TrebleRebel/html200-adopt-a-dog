@@ -163,6 +163,10 @@ textarea {
     display: block;
 }
 
+.dog-img:hover {
+    cursor: pointer;
+}
+
 .adopt-button {
     display: block;
     background-color: rgb(119, 184, 22);
