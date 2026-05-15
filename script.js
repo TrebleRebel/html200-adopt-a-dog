@@ -1,83 +1,95 @@
-function murphyInfo(){
+function murphyInfo() {
 let info = `Name: Murphy
 Breed: N/A
 Adoption Fee: $123.45`
 alert(info)
 }
 
-function poppyInfo(){
+function poppyInfo() {
 let info = `Name: Poppy
 Breed: N/A
 Adoption Fee: $123.45`
 alert(info)
 }
 
-function jackInfo(){
+function jackInfo() {
 let info = `Name: Jack
 Breed: N/A
 Adoption Fee: $123.45`
 alert(info)
 }
 
-function duffyInfo(){
+function duffyInfo() {
 let info = `Name: Duffy
 Breed: N/A
 Adoption Fee: $123.45`
 alert(info)
 }
 
-function lucasInfo(){
+function lucasInfo() {
 let info = `Name: Lucas
 Breed: N/A
 Adoption Fee: $123.45`
 alert(info)
 }
 
-function jakeInfo(){
+function jakeInfo() {
 let info = `Name: Jake
 Breed: N/A
 Adoption Fee: $123.45`
 alert(info)
 }
 
-function angusInfo(){
+function angusInfo() {
 let info = `Name: Angus
 Breed: N/A
 Adoption Fee: $123.45`
 alert(info)
 }
 
-function violetInfo(){
+function violetInfo() {
 let info = `Name: Violet
 Breed: N/A
 Adoption Fee: $123.45`
 alert(info)
 }
 
-function piperInfo(){
+function piperInfo() {
 let info = `Name: Piper
 Breed: N/A
 Adoption Fee: $123.45`
 alert(info)
 }
 
-function maximusInfo(){
+function maximusInfo() {
 let info = `Name: Maximus
 Breed: N/A
 Adoption Fee: $123.45`
 alert(info)
 }
 
-function lunaInfo(){
+function lunaInfo() {
 let info = `Name: Luna
 Breed: N/A
 Adoption Fee: $123.45`
 alert(info)
 }
 
-function stellaInfo(){
+function stellaInfo() {
 let info = `Name: Stella
 Breed: N/A
 Adoption Fee: $123.45`
 alert(info)
 }
+
+
+let cart = 0;
+const dogPrice = 123.45;
+const priceDisplay = document.getElementById("total");
+const button = document.getElementById("adoptButton");
+
+button.addEventListener("click", () => {
+cart += dogPrice; 
+priceDisplay.innerText = cart;
+alert("Total: $" + cart);
+});

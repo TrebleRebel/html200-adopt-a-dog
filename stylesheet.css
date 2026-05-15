@@ -181,6 +181,10 @@ textarea {
     font-size: 1rem;
 }
 
+.adopt-button:hover {
+    cursor: pointer;
+}
+
 .more-button {
     display: block;
     background-color: rgb(235, 235, 235);
