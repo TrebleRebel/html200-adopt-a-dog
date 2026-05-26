@@ -93,3 +93,7 @@ cart += dogPrice;
 priceDisplay.innerText = cart;
 alert("Total: $" + cart);
 });
+
+function submitAlert() {
+    alert('Thank you. The form information has been received.');
+}
