@@ -86,10 +86,10 @@
                             </div>
                         </div>
                         <label for="first-time">First Time Adopter?</label><br>
-                        <div class="first-time">
-                            <input type="radio" id="yes" name="first-time" value="yes">
+                        <div class="first-time" id="first-time">
+                            <input type="radio" name="first-time" value="Yes" checked>
                             <label for="yes">Yes</label>
-                            <input type="radio" id="no" name="first-time" value="no">
+                            <input type="radio" name="first-time" value="No">
                             <label for="no">No</label>
                         </div><br><br>
                         <label for="state">Pickup Location:</label><br>
@@ -102,7 +102,7 @@
                         <label for="name">Dogs Adopted</label><br>
                         <label for="name">Total Adoption Cost</label><br>
 
-                        <input type="submit" value="Submit" class="submit-button" onclick="submitAlert();">
+                        <input type="submit" value="Submit" class="submit-button" onclick="submitCheckoutAlert();">
                     </form>
             </div>
         </body>

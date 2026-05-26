@@ -62,33 +62,33 @@
                 <h1>Contact Us</h1>
                     <form>
                         <label for="name">First Name:</label><br>
-                        <input type="text" id="name" name="fname"><br>
+                        <input type="text" id="fname" name="name"><br>
                         <label for="name">Last Name:</label><br>
-                        <input type="text" id="name" name="lname"><br>
+                        <input type="text" id="lname" name="name"><br>
                         <label for="email">Email Address:</label><br>
                         <input type="email" id="email" name="email"><br>
                         <label for="phone">Phone Number:</label>
                         <input type="tel" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
                         <label for="check">What Age Group(s) of Dogs Are You Interested In?</label><br>
                         <div class="first-time">
-                        <input type="checkbox" id="dog1" name="dog1" value="puppies">
-                        <label for="vehicle1"> Puppies</label><br>
-                        <input type="checkbox" id="dog2" name="dog2" value="adults">
-                        <label for="vehicle2"> Adults</label><br>
-                        <input type="checkbox" id="dog3" name="dog3" value="elders">
-                        <label for="vehicle3"> Elders</label><br>
+                        <input type="checkbox" name="dog-age[]" value="Puppies">
+                        <label for="puppies"> Puppies</label><br>
+                        <input type="checkbox" name="dog-age[]" value="Adults">
+                        <label for="adults"> Adults</label><br>
+                        <input type="checkbox" name="dog-age[]" value="Elders">
+                        <label for="elders"> Elders</label><br>
                         </div><br><br>
                         <label for="first-time">Have You Adopted With Us Before?</label><br>
                         <div class="first-time">
-                            <input type="radio" id="yes" name="first-time" value="yes">
+                            <input type="radio" id="first-time" name="first-time" value='Yes' checked>
                             <label for="yes">Yes</label>
-                            <input type="radio" id="no" name="first-time" value="no">
+                            <input type="radio" id="first-time" name="first-time" value='No'>
                             <label for="no">No</label>
                         </div><br><br>
-                        <label for="state">Comment or Message:</label><br>
-                        <textarea name="message" rows="10" cols="30"></textarea><br>
+                        <label for="comment">Comment or Message:</label><br>
+                        <textarea name="message" id="message" rows="10" cols="30" placeholder="Anything else you would like to comment on?  If not, just type in 'N/A'"></textarea><br>
 
-                        <input type="submit" value="Submit" class="submit-button" onclick="submitAlert();">
+                        <input type="submit" value="Submit" class="submit-button" onclick="submitContactAlert();">
                     </form>
             </div>
         </body>
