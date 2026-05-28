@@ -57,6 +57,37 @@
             <div class="main-page">
                 <h1>Adoptadog Blog</h1>
                 <section class="blog-container">
+                <div>
+                    <img id="image">
+                </div>
+                <div>
+                    <h2 id="headline"></h2>
+                    <p id="description"></p>
+                </div>
+                </section>
+
+                <section class="blog-container">
+                <div>
+                    <img id="image2">
+                </div>
+                <div>
+                    <h2 id="headline2"></h2>
+                    <p id="description2"></p>
+                </div>
+                </section>
+
+                <section class="blog-container">
+                <div>
+                    <img id="image3">
+                </div>
+                <div>
+                    <h2 id="headline3"></h2>
+                    <p id="description3"></p>
+                </div>
+                </section>
+            </div>
+
+                <!--<section class="blog-container">
                     <div>
                         <img src="images/blog-1.jpg">
                     </div>
@@ -100,7 +131,7 @@
                         con nes cus esere dolut hicto teni solutenis alit ulparume nonseca estorer spernam.</p>
                     </div>
                 </section>
-            </div>
+            </div>-->
         </body>
 
         <footer class="footer_container">
@@ -114,5 +145,52 @@
                 </div>
                 <p class="footertext">© 2018 Adoptadog, LLC | Seattle, WA</p>
             </div>
+
+                <script>
+                    const post1 = 
+                        {headline: "Traveling With Your Dog",
+                        description: `Iduciendisite quo magnatem iuntum quid quaest ea am, tenderumet adis dolenem quidustrum fuga. Faceaquae estioria derum recuptatur, cum volore, 
+                        undipsa doloreium hillupta aut es ut alitatuscit ommossum haritatur arum qui officae videbiti corporeium faccull oribus es quidignis ipietus explam 
+                        sus am aut amet ant fugiatum, utem non reptat.
+                        Uptiusd andesci qui nem aut vendion ectur? Debis que explaut laborenia que doluptur, con et labor abor sant poreperum dio quat que doluptatur aut 
+                        voluptassim quisciatquam ea ad qui con nes cus esere dolut hicto teni solutenis alit ulparume nonseca estorer spernam voluptassim quisciatquam ea ad qui 
+                        con nes cus esere dolut hicto teni solutenis alit ulparume nonseca estorer spernam.`,
+                        image: 'images/blog-1.jpg'
+                        }
+                        
+                        document.getElementById('headline').innerHTML = post1.headline;
+                        document.getElementById('description').innerHTML = post1.description;
+                        document.getElementById('image').src = "images/blog-1.jpg";
+
+                    const post2 = 
+                        {headline2: "How To Walk Multiple Dogs",
+                        description2: `Iduciendisite quo magnatem iuntum quid quaest ea am, tenderumet adis dolenem quidustrum fuga. Faceaquae estioria derum recuptatur, cum volore, 
+                        undipsa doloreium hillupta aut es ut alitatuscit ommossum haritatur arum qui officae videbiti corporeium faccull oribus es quidignis ipietus explam 
+                        sus am aut amet ant fugiatum, utem non reptat.
+                        Uptiusd andesci qui nem aut vendion ectur? Debis que explaut laborenia que doluptur, con et labor abor sant poreperum dio quat que doluptatur aut 
+                        voluptassim quisciatquam ea ad qui con nes cus esere dolut hicto teni solutenis alit ulparume nonseca estorer spernam voluptassim quisciatquam ea ad qui 
+                        con nes cus esere dolut hicto teni solutenis alit ulparume nonseca estorer spernam.`,
+                        image2: 'images/blog-1.jpg'
+                        }
+
+                        document.getElementById('headline2').innerHTML = post2.headline2;
+                        document.getElementById('description2').innerHTML = post2.description2;
+                        document.getElementById('image2').src = "images/blog-2.jpg";
+
+                    const post3 = 
+                        {headline3: "Teach Your Dog To Fetch!",
+                        description3: `Iduciendisite quo magnatem iuntum quid quaest ea am, tenderumet adis dolenem quidustrum fuga. Faceaquae estioria derum recuptatur, cum volore, 
+                        undipsa doloreium hillupta aut es ut alitatuscit ommossum haritatur arum qui officae videbiti corporeium faccull oribus es quidignis ipietus explam 
+                        sus am aut amet ant fugiatum, utem non reptat.
+                        Uptiusd andesci qui nem aut vendion ectur? Debis que explaut laborenia que doluptur, con et labor abor sant poreperum dio quat que doluptatur aut 
+                        voluptassim quisciatquam ea ad qui con nes cus esere dolut hicto teni solutenis alit ulparume nonseca estorer spernam voluptassim quisciatquam ea ad qui 
+                        con nes cus esere dolut hicto teni solutenis alit ulparume nonseca estorer spernam.`,
+                        image3: 'images/blog-1.jpg'
+                        }
+
+                        document.getElementById('headline3').innerHTML = post3.headline3;
+                        document.getElementById('description3').innerHTML = post3.description3;
+                        document.getElementById('image3').src = "images/blog-3.jpg";
+                </script>
         </footer>
     </html>
